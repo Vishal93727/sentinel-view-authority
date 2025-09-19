@@ -9,6 +9,10 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Tourists from "./pages/Tourists";
 import Incidents from "./pages/Incidents";
+import Zones from "./pages/Zones";
+import Analytics from "./pages/Analytics";
+import Assistant from "./pages/Assistant";
+import Settings from "./pages/Settings";
 import DashboardLayout from "./components/layout/DashboardLayout";
 import NotFound from "./pages/NotFound";
 
@@ -37,10 +41,10 @@ const App = () => (
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="tourists" element={<Tourists />} />
             <Route path="incidents" element={<Incidents />} />
-            <Route path="zones" element={<div className="p-8 text-center"><h2 className="text-2xl font-bold">Zone Management</h2><p className="text-muted-foreground mt-2">Coming soon...</p></div>} />
-            <Route path="analytics" element={<div className="p-8 text-center"><h2 className="text-2xl font-bold">Analytics</h2><p className="text-muted-foreground mt-2">Coming soon...</p></div>} />
-            <Route path="assistant" element={<div className="p-8 text-center"><h2 className="text-2xl font-bold">AI Assistant</h2><p className="text-muted-foreground mt-2">Coming soon...</p></div>} />
-            <Route path="settings" element={<div className="p-8 text-center"><h2 className="text-2xl font-bold">Settings</h2><p className="text-muted-foreground mt-2">Coming soon...</p></div>} />
+            <Route path="zones" element={<Zones />} />
+            <Route path="analytics" element={<Analytics />} />
+            <Route path="assistant" element={<Assistant />} />
+            <Route path="settings" element={<Settings />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
